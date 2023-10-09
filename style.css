@@ -1,0 +1,215 @@
+
+.sticky-nav {
+    position: sticky;
+    display: flex;
+    top: 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 100; 
+    width: 100%;
+
+}
+
+.sticky-nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.sticky-nav ul li {
+    display: inline;
+    margin-right: 100px;
+    padding-right: 2rem;
+    margin: 0 10px;
+}
+
+.sticky-nav a {
+    text-decoration: none;
+    color: #f3eeee;
+    font-weight: bold;
+}
+
+nav ul li:nth-child(1) a {
+    color: red;
+    font-size:50px; 
+    font-weight: bolder;
+    padding-left: 2rem;
+    justify-content: left;
+    float: left;
+    
+}
+
+@media (max-width: 768px) {
+    .sticky-nav {
+        flex-direction: column;
+    }
+
+    .sticky-nav ul {
+        flex-direction: column;
+        text-align: right; /* Left-align the links within the column */
+    }
+
+    .sticky-nav li {
+        margin: 10px 0; /* Add margin to separate the links */
+    }
+}
+
+
+/* Styles for header and general layout */
+header {
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    max-width: 100%;
+}
+
+body {
+    font-family:'Poppins', sans-serif;
+    flex-direction: row;
+    background-color: #0c0b0b;
+  
+}
+
+main {
+  justify-content: center; 
+  flex: 1;
+  margin: 10px;
+
+}
+
+/* Styles for movie listings */
+#movie-list {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+#movie-list h2 {
+    font-size: 50px;
+    color: wheat; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Add 3D flip effect */
+.movie-item-flip {
+    perspective: 1000px;
+    transition: transform 0.5s;
+    display: flex;
+}
+
+.movie-item-flip:hover {
+    transform: rotateY(180deg);
+}
+
+
+#movie-list p {
+    color: wheat;
+}
+
+.movie {
+    margin: 10px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.movie img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s, opacity 0.3s;
+    width: 300px; 
+}
+
+.movie img:hover {
+    transform: scale(0.95); 
+    opacity: 0.8; 
+}
+/* Apply styles to movie images */
+.movie img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s; 
+}
+
+
+/* Styles for seat selection */
+#seat-selection {
+    flex: 1;
+    padding: 7rem;
+    align-items: center;
+}
+
+#seat-selection h2{
+    color: #FF5733;
+}
+
+#screen {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 24px;
+}
+
+#seats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1px;
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns:repeat(8, 1fr);
+    gap: 5px;
+    
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border: 1px solid #888;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 1rem;
+
+}
+
+.seat.selected {
+    background-color: #FF5733;
+    color: white;
+}
+
+#book-tickets {
+    background-color: #FF5733;
+    color: white;
+    padding: 1rem 2rem;
+    border: darkred;
+    border-radius: 2%;
+    cursor: pointer;
+}
+  
+  
+
+
+
+
