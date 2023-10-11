@@ -1,0 +1,54 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "title": "The King's Man",
+      "runtime": "108",
+      "capacity": 30,
+      "showtime": "04:00PM",
+      "tickets_sold": 27,
+      "description": "A secret service agency seeks to prevent World War I.",
+      "poster": "https://www.example.com/poster1.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Uncharted",
+      "runtime": "108",
+      "capacity": 30,
+      "showtime": "04:00PM",
+      "tickets_sold": 27,
+      "description": "An explorer embarks on a dangerous adventure.",
+      "poster": "https://www.example.com/poster2.jpg"
+    },
+    {
+      "id": "3",
+      "title": "End Game",
+      "runtime": "108",
+      "capacity": 30,
+      "showtime": "04:00PM",
+      "tickets_sold": 27,
+      "description": "Superheroes unite to save the universe.",
+      "poster": "https://www.example.com/poster3.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Dune",
+      "runtime": "108",
+      "capacity": 30,
+      "showtime": "04:00PM",
+      "tickets_sold": 27,
+      "description": "A story of interstellar power struggle.",
+      "poster": "https://www.example.com/poster4.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Maze Runner",
+      "runtime": "108",
+      "capacity": 30,
+      "showtime": "04:00PM",
+      "tickets_sold": 27,
+      "description": "A secret service agency seeks to prevent World War I.",
+      "poster": "https://www.example.com/poster1.jpg"
+    }
+  ]
+}

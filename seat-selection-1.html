@@ -1,0 +1,55 @@
+<!-- seat-selection.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Selection</title>
+    <link rel="stylesheet" href="seat-selection.css"> <!-- Include your styles -->
+</head>
+
+<body>
+    <nav class="sticky-nav">
+        <ul>
+            <li><a href="index.html">FLATDANGO</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Coming Soon</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>BOOK HERE</h1>
+    </header>
+    <section class="movie">
+        <img src="images/The King's Man.jpeg" id="2">
+        <div class="info">
+            <h1>THE KING'S MAN</h1>
+            <h2>About</h2>
+            <p>As a collection of history's worst tyrants and criminal masterminds gather to plot a war to wipe out
+                millions, one man must race against time to stop them.
+            </p>
+            <div class="details">
+                <div><h3>Released:</h3><p> 2021-12-21</p></div>
+                <div><h3>Genre:</h3><p> Action, Adventure, Comedy, Thriller</p></div>
+                <div><h3>Casts:</h3><p> Matthew Goode, Ralph Fiennes, Daniel Brühl, Neil Jackson, Stanley Tucci</p></div>
+                <div><h3>Duration:</h3><p>131 min</p></div>
+                <div><h3>Country:</h3><p> Czech Republic, United States of America,United Kingdom</p></div>
+                <div><h3>Production:</h3><p> Marv Films, 20th Century Fox, Cloudy Productions.</p></div>
+            </div>
+        </div>
+    </section>
+    <section id="seat-selection">
+        <h2>Select Your Seat</h2>
+        <div id="screen">Screen</div>
+        <div id="seats">
+            <!-- Dynamically generate seat layout using JavaScript -->
+        </div>
+        <button id="book-tickets">Book Tickets</button>
+        <div class="booked-seat"></div>
+    </section>
+    <script src="seat-selection.js"></script>
+</body>
+
+</html>

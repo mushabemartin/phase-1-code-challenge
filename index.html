@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Century Cinemax</title>
+    <title>FLATDANGO</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,54 +21,59 @@
     </header>
     <main>
         <section id="movie-list">
-            <div class="movie">
+            <div class="movie" data-movie="1" data-target="seat-selection-1.html">
                 <img src="images/The King's Man.jpeg" alt="Movie 1">
-                <h2>KING'S MAN</h2>
+                <h2 >KING'S MAN</h2>
                 <p>Runtime: 108 minutes</p>
                 <p>Showtime: 04:00PM</p>
-                <p>Available Tickets: 3</p>
+                <p>Available Tickets: <span id="available-seats">80</span></p>
                 <button class="reserve-btn" data-movie="1">Reserve</button>
+                <div class="seats-container">
+
+                </div>            
             </div>
-            <div class="movie">
+            <div class="movie" data-movie="2" data-target="seat-selection-2.html">
                 <img src="images/Uncharted.jpeg" alt="Movie 1">
                 <h2>UNCHARTED</h2>
                 <p>Runtime: 108 minutes</p>
-                <p>Showtime: 04:00PM</p>
-                <p>Available Tickets: 3</p>
-                <button class="reserve-btn" data-movie="1">Reserve</button>
+                <p>Showtime: 01:00PM</p>
+                <p>Available Tickets: <span id="available-seats">80</span></p>
+                <button class="reserve-btn" data-movie="2">Reserve</button>
+                <div class="seats-container">
+
+                </div> 
             </div>
-            <div class="movie">
+            <div class="movie" data-movie="3" data-target="seat-selection-3.html">
                 <img src="images/Marvel Movie Inspirational Quotes.jpeg" alt="Movie 1">
                 <h2>END GAME</h2>
                 <p>Runtime: 108 minutes</p>
                 <p>Showtime: 04:00PM</p>
-                <p>Available Tickets: 3</p>
-                <button class="reserve-btn" data-movie="1">Reserve</button>
+                <p>Available Tickets: <span id="available-seats">80</span></p>
+                <button class="reserve-btn" data-movie="3">Reserve</button>
+                <div class="seats-container">
+
+                </div> 
             </div>
-            <div class="movie">
+            <div class="movie" data-movie="4" data-target="seat-selection-4.html">
                 <img src="images/Dune (2021 Movie) Review_ A Visually Stunning Massive Work Of Art.jpeg" alt="Movie 1">
                 <h2>DUNE</h2>
                 <p>Runtime: 108 minutes</p>
                 <p>Showtime: 04:00PM</p>
-                <p>Available Tickets: 3</p>
-                <button class="reserve-btn" data-movie="1">Reserve</button>
+                <p>Available Tickets: <span id="available-seats">80</span></p>
+                <button class="reserve-btn" data-movie="4">Reserve</button>
+                <div class="seats-container">
+
+                </div> 
             </div>
             </div>
             <!-- Add more movie listings here -->
         </section>
         <ul id="films">
+            
             <!-- JavaScript will populate the movie menu here -->
             <!-- Each movie should be an <li> element with Buy Ticket button -->
         </ul>
-        <section id="seat-selection">
-            <h2>Select Your Seats</h2>
-            <div id="screen">Screen</div>
-            <div id="seats">
-                <!-- Dynamically generate seat layout using JavaScript -->
-            </div>
-            <button id="book-tickets">Book Tickets</button>
-        </section>
+        <script src="index.js"></script>    
     </main>
-    <script src="index.js"></script>
 </body>
 </html>
